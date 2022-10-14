@@ -21,6 +21,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        xxs: "0.65rem",
+      },
       backgroundImage: {
         mobile: "url('../images/bg-intro-mobile.png')",
         desktop: "url('../images/bg-intro-desktop.png')",
