@@ -22,26 +22,36 @@
 
     <link rel="stylesheet" href="./styles/styles.css" />
 
+    <!-- <style>
+      * {
+        outline: 1px solid red;
+      }
+    </style> -->
+
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body
-    class="py-20 text-center bg-primary-red bg-opacity-95 bg-mobile bg-no-repeat bg-center flex flex-col justify-center items-center sm:bg-desktop"
+    class="py-20 text-center bg-primary-red bg-opacity-95 bg-mobile bg-no-repeat bg-center min-h-screen flex flex-col justify-center items-center sm:bg-desktop lg:py-0"
   >
-    <main class="max-w-[87%]">
-      <section class="max-w-2xl flex flex-col gap-16">
-        <article class="text-white grid gap-5">
-          <h1 class="font-bold text-[1.7rem] leading-tight">
+    <main class="max-w-[87%] lg:max-w-[77%]">
+      <section
+        class="max-w-2xl flex flex-col gap-16 lg:gap-0 lg:flex-row lg:max-w-full"
+      >
+        <article
+          class="text-white grid gap-5 lg:gap-8 lg:text-left lg:place-content-center"
+        >
+          <h1 class="font-bold text-[1.7rem] leading-tight lg:text-5xl">
             Learn to code by watching others
           </h1>
-          <p class="font-medium text-gray-100">
+          <p class="font-medium text-gray-100 lg:text-lg">
             See how experienced developers solve problems in real-time. Watching
             scripted tutorials is great, but understanding how developers think
             is invaluable.
           </p>
         </article>
-        <article class="grid gap-5">
+        <article class="grid gap-5 lg:w-full">
           <div
-            class="px-[20%] py-5 rounded-lg text-white text-center bg-accent-blue shadow-theme"
+            class="px-[20%] py-5 rounded-lg text-white text-center bg-accent-blue shadow-theme lg:px-0"
           >
             <span class="font-bold">Try it free 7 days</span> then $20/mo.
             thereafter
@@ -54,7 +64,7 @@
             <div class="input-and-error-container">
               <div class="relative">
                 <input
-                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500"
+                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500 lg:pl-8"
                   type="text"
                   placeholder="First Name"
                   name="firstName"
@@ -75,7 +85,7 @@
             <div class="input-and-error-container">
               <div class="relative">
                 <input
-                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500"
+                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500 lg:pl-8"
                   type="text"
                   placeholder="Last Name"
                   name="lastName"
@@ -97,7 +107,7 @@
               <div class="relative">
                 <input
                   id="email"
-                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500"
+                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500 lg:pl-8"
                   type="text"
                   placeholder="Email Address"
                   name="email"
@@ -124,7 +134,7 @@
             <div class="input-and-error-container">
               <div class="relative">
                 <input
-                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500"
+                  class="w-full pl-4 pr-12 py-4 outline-none border rounded-md text-sm font-semibold focus:border-black placeholder:text-gray-500 lg:pl-8"
                   type="password"
                   placeholder="Password"
                   name="password"
@@ -162,7 +172,7 @@
       </section>
     </main>
 
-    <footer class="max-w-[87%] text-xxs text-center my-3">
+    <footer class="max-w-[87%] text-xxs text-center my-3 lg:mt-6">
       <p class="attribution">
         Challenge by
         <a
