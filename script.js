@@ -39,8 +39,22 @@ window.onload = () => {
       const currentErrorIconClassList =
         inputAndErrorContainers[index].children[0].children[1];
       addOrRemoveClass(!inputValue, currentErrorMessageClassList, "hidden");
+      addOrRemoveClass(
+        !inputValue,
+        currentErrorMessageClassList,
+        "border-primary-red"
+      );
       addOrRemoveClass(!inputValue, currentErrorIconClassList, "hidden");
-      addOrRemoveClass(!inputValue, input, "border-red-500");
+      if (!inputValue) {
+        input.classList.remove("focus:border-black");
+        input.classList.add("border-primary-red", "focus:border-primary-red");
+      } else {
+        input.classList.remove(
+          "border-primary-red",
+          "focus:border-primary-red"
+        );
+        input.classList.add("focus:border-black");
+      }
     });
   }
 
